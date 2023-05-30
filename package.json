@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "translations": "node tools/translation/index.js",
+    "translations:init": "cd tools/translation && yarn install && cp config/main-2.js.example config/main.js"
   },
   "dependencies": {
     "@types/node": "20.1.1",
@@ -14,7 +16,9 @@
     "@types/react-dom": "18.2.4",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "js-cookie": "^3.0.5",
     "next": "13.4.1",
+    "next-intl": "2.14.0-beta.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
